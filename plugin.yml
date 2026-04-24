@@ -1,0 +1,30 @@
+name: BanSystem
+version: 1.0.0
+author: heartdeveloper
+api: 2.0.0
+main: heartdeveloper\BanSystem\Main
+
+commands:
+  banir:
+    description: Banir jogador permanentemente
+    usage: /banir <jogador>
+    permission: bansystem.ban
+  banirtempo:
+    description: Banir jogador temporariamente
+    usage: /banirtempo <jogador> <tempo> <razao>
+    permission: bansystem.bantemp
+  removerbanimento:
+    description: Remover banimento de um jogador
+    usage: /removerbanimento <jogador>
+    permission: bansystem.unban
+  banhelp:
+    description: Ajuda do BanSystem
+    usage: /banhelp
+
+permissions:
+  bansystem.ban:
+    default: op
+  bansystem.bantemp:
+    default: op
+  bansystem.unban:
+    default: op
